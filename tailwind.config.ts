@@ -64,10 +64,14 @@ export default {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: 'var(--radius)', /* 4px */
+				md: 'var(--radius)', /* 4px */
+				sm: 'var(--radius-sm)' /* 2px */
 			},
+			fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'],
+        mono: ['var(--font-mono)', 'monospace'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
